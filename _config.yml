@@ -29,7 +29,7 @@ description:           >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:               AI Devloper Newbie
+tagline:               돈 많은 백수되기
 
 # A list of keywords for your blog
 keywords:              [AI, git, gitblog, data science, developer]
@@ -49,13 +49,19 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
-
+  - title:             Example1
+    url:               /example1/
+  - title:             Example2
+    url:               /example2/
+  - title:             Subcat
+    url:               /subcat/
+    submenu:
+      - title:             Test1
+        url:               /Test1/
+      - title:             Test2
+        url:               /Test2/ 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
@@ -67,7 +73,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -80,7 +86,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 
