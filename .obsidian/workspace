@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "0f88180384e0856c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a559e6ebfb590ead",
+        "type": "leaf",
+        "dimension": 99.99999999999999,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-03-21-6번째-수업.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16422eb0a798fa54",
+    "type": "split",
+    "children": [
+      {
+        "id": "616ed4745f438c71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fc93f87cc73dec6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8fe509120a31734b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "861c21cbaecf3262",
+    "type": "split",
+    "children": [
+      {
+        "id": "767b8f3ef4edf093",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "881fa1699da42a2a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-03-21-6번째-수업.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a559e6ebfb590ead",
+  "lastOpenFiles": [
+    "_posts/2022-03-21-6번째-수업.md",
+    "_posts/2021-08-29-markdown.md",
+    "_featured_categories/studylog.md",
+    "_featured_categories/example2.md",
+    "_featured_categories/example1.md",
+    "_featured_categories/subcat/test2.md",
+    "_featured_categories/subcat/test1.md"
+  ]
+}

@@ -37,7 +37,8 @@ keywords:              [AI, git, gitblog, data science, developer]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif
+logo:                  https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
+# logo:                  https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -86,7 +87,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9.1.6
 
 
@@ -94,7 +95,8 @@ remote_theme: hydecorp/hydejack@v9.1.6
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif #/assets/img/sidebar-bg.jpg
+accent_image:          https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
+# accent_image:          https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif #/assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
