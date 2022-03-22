@@ -25,8 +25,7 @@ title:                 올빼미 블로그 (Owl's Blog)
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Welcome to my Log Blog!
 
 # A shorter description for the sidebar.
 tagline:               돈 많은 백수되기
@@ -55,14 +54,8 @@ menu:
   - title:             Study Log
     url:               /studylog/
   - title:             Paper
-    url:               /example2/
-  - title:             Subcat
-    url:               /subcat/
-    submenu:
-      - title:             Test1
-        url:               /Test1/
-      - title:             Test2
-        url:               /Test2/ 
+    url:               /paper/
+
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
@@ -87,8 +80,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9.1.6
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9.1.6
 
 
 # Customizaton
@@ -142,12 +135,19 @@ defaults:
     values:
       layout:          plain
       sitemap:         false
-
+  
   # # You can use the following to enable comments on all posts.
   # - scope:
   #     type:            posts
   #   values:
-  #     comments:        true
+  #     # https://applause-button.com/
+  #     applause_button:       true
+
+  # You can use the following to enable comments on all posts.
+  - scope:
+      type:            posts
+    values:
+      comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:

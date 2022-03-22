@@ -13,7 +13,7 @@ redirect_from:
 
 <!--author-->
 
-## Hydejack
+## 하승범 (Seungbeom Ha)
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
 {:.lead}
