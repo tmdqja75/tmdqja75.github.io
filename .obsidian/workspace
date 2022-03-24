@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/studylog/2022-03-23-8th-day.md",
+            "file": "_posts/studylog/2022-03-24-9th-day.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/studylog/2022-03-23-8th-day.md",
+                "file": "_posts/studylog/2022-03-24-9th-day.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +90,15 @@
   },
   "active": "00b4743cb5b406a8",
   "lastOpenFiles": [
-    "_posts/studylog/2022-03-23-8th-day.md",
+    "_posts/studylog/2022-03-24-9th-day.md",
     "_posts/studylog/2022-03-14-1st-day.md",
+    "_posts/studylog/2022-03-23-8th-day.md",
     "2022-03-14-1st-day.md",
     "_posts/studylog/2022-03-22-7th-day.md",
     "_posts/studylog/2022-03-15-2nd-day.md",
     "docs/advanced.md",
     "_includes/table.md",
     "about.md",
-    "vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/README.md",
-    "_posts/studylog/2022-03-22-7번째-수업.md"
+    "vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/README.md"
   ]
 }

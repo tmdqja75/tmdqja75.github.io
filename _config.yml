@@ -88,7 +88,8 @@ remote_theme: hydecorp/hydejack@v9.1.6
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
+accent_image:            https://media.giphy.com/media/PjJ1cLHqLEveXysGDB/giphy.gif
+# accent_image:          https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
 # accent_image:          https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif #/assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
