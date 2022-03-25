@@ -2,7 +2,7 @@
 layout: list
 category: studylog
 bigtitle: Kaggle Course Notes
-slug: KaggleCourse
+slug: kagglecourse
 description: >
   Kaggle Course Notes
 

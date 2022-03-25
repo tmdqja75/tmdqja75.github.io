@@ -7,7 +7,7 @@ description: >
 sitemap: false
 categories:
   - studylog
-  - KaggleCourse
+  - kagglecourse
 ---
 # Introduction to Machine Learning (from Kaggle Courses)
 
