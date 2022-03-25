@@ -13,7 +13,7 @@ redirect_from:
 
 <!--author-->
 
-## 하승범 (Seungbeom Ha)
+## Seungbeom Ha (하승범)
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
 {:.lead}

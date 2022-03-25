@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/studylog/2022-03-24-9th-day.md",
+            "file": "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
             "mode": "source",
             "source": false
           }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00309371948242,
-    "collapsed": true
+    "width": 239.00309371948242
   },
   "right": {
     "id": "861c21cbaecf3262",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/studylog/2022-03-24-9th-day.md",
+                "file": "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "00b4743cb5b406a8",
   "lastOpenFiles": [
-    "_posts/studylog/2022-03-24-9th-day.md",
+    "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
     "_posts/studylog/2022-03-14-1st-day.md",
+    "_posts/studylog/2022-03-24-9th-day.md",
     "_posts/studylog/2022-03-23-8th-day.md",
     "2022-03-14-1st-day.md",
     "_posts/studylog/2022-03-22-7th-day.md",
     "_posts/studylog/2022-03-15-2nd-day.md",
     "docs/advanced.md",
     "_includes/table.md",
-    "about.md",
-    "vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/README.md"
+    "about.md"
   ]
 }
