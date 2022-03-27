@@ -11,6 +11,9 @@ categories:
 ---
 # Introduction to Machine Learning (from Kaggle Courses)
 
+This is my study notes for [Introduction to Machine Learning from Kaggle Courses]('https://www.kaggle.com/learn/intro-to-machine-learning')
+
+
 * this unordered seed list will be replaced by the toc
 {:toc}
 
@@ -75,7 +78,7 @@ Typical steps of building and utilizing the model is as follows:
 - **Predict**: input new data into trained model
 - **Evaluate**: check if the model's output is accurate or not
 
-To build a model that predicts a housing price, we will use Decision Tree model on our prepared dataset (`X,` `y`). python library `scikit-learn` contains `DecisionTreeRegressor` method that we can use to train ML model. Here
+To build a model that predicts a housing price, we will use [Decision Tree](https://scikit-learn.org/stable/modules/tree.html) model on our prepared dataset (`X,` `y`). python library `scikit-learn` contains `DecisionTreeRegressor` method that we can use to train ML model. Here
 
 ```python
 from sklearn.tree import DecisionTreeRegressor
@@ -104,7 +107,8 @@ Before checking the validation of the model, we first introduce one of many metr
 ### MAE (Mean Absolute Error)
 
 MAE is mean value of all absolue values of errors
-$$error = actual-predicted$$
+
+$$error = predicted-actual$$
 
 $$\sum_{i=1}^{n}{|{error}|_i}/n$$
 
@@ -148,10 +152,21 @@ print(mean_absolute_error(val_y, val_predictions))
 
 We can see that MAE calculated with data inside training `X` dataset and the one with validation `X` dataset are significantly different; the MAE of validation dataset is way highter. This shows that the model ww've build with decision tree is impractical to use in actual prediction
 
-## Underfitting and Overfitting
+## Overfitting and Underfitting 
 
+Decision Tree in scikit-learn has a lot of parameters that user can tweak for their own use. You can check it in this scikit-learn [Decision Tree documentation](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html). Tree depth is one of the parameters that are commonly tweaked is the depth of the decision tree (`max_depth`). It indicates how many splits would occur in the tree model. 
 
+### Overfitting
 
-## Random Forest
+If we divide tree quite a lot in a certain decision tree, each leaf would contain very small amount of dataset in each leaf. This model would work quite well on the training dataset. However, the model would fail predicion on the new dataset since each leaf is based on only few datapoints in original test data, and not based on general patterns in data.
 
-## Machine Learning Competition
+This is called **overfitting**. Overfitting means that the model makes almost perfect predictions on the training dataset, but low quality prediction on the validation datasets.
+
+### Underfitting
+
+Let's think about another extreme end. If we make very few division, we would only have few leaves hanging on our dedision tree. This means that each leaf would encompass large range of housing values. Each leaf would fail to capture the details in pattern among the training dataset. Predicting training dataset and validation dataset with this tree would both result in poor prediction result.
+
+This is known as **underfitting**, model making poor prediction due to lack of details captured by the model.
+
+**It is important to find the optimal point where the prediction validation score is between underfitting and overfitting.**
+

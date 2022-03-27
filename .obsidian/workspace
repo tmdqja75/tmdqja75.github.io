@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
+            "file": "_posts/2022-03-26-토킹데이.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
+                "file": "_posts/2022-03-26-토킹데이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "00b4743cb5b406a8",
   "lastOpenFiles": [
+    "_posts/2022-03-26-토킹데이.md",
     "_posts/studylog/Kaggle Learn/2022-03-25-Intro-to-Machine-Learning.md",
     "_posts/studylog/2022-03-14-1st-day.md",
     "_posts/studylog/2022-03-24-9th-day.md",
@@ -97,7 +98,6 @@
     "_posts/studylog/2022-03-22-7th-day.md",
     "_posts/studylog/2022-03-15-2nd-day.md",
     "docs/advanced.md",
-    "_includes/table.md",
-    "about.md"
+    "_includes/table.md"
   ]
 }
