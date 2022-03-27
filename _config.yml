@@ -55,7 +55,7 @@ menu:
     url:               /studylog/
     submenu:
       - title:         PlayData
-        url:           /PlayData/
+        url:           /playdata/
       - title:         Kaggle Course
         url:           /KaggleCourse/
   - title:             Paper
