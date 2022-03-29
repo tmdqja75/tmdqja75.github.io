@@ -15,5 +15,5 @@ description: >
 * [playdata]{:.heading.flip-title} --- PlayData AI Course Notes
 * [KaggleCourse]{:.heading.flip-title} --- Kaggle Course
 
-[PlayData]: /playdata/
-[KaggleCourse]: /KaggleCourse/
+[playdata]: /playdata/
+[KaggleCourse]: /kagglecourse/

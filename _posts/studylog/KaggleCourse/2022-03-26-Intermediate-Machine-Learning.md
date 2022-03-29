@@ -46,6 +46,28 @@ The datset provided by kaggle is sperated into two dataset: train.csv and test.c
 
 ## Catergorical Variables
 
+Sometimes, there are values in datasets that are not numerical values. Some values can be caterogrical, where each data is one of many different categories. There are three data preprocessing approach that we can use to deal with non-numerical categorical data. 
+
+1. Drop Categorical Values
+  
+We can simply remove the columns that contains categorical values if such columns are not important factors in the dataset
+
+2. Ordinal Encoding
+
+Ordinal encoding assigns each values in category to a unique numerical value.
+
+![OrdinalEncoding](/assets/img/KaggleLearn/ordinalEncoding.png)
+
+Ordinal encoding works well with ordinal variables. **Ordinal varibles** are values with clear ordering such as satisfaction rate (Satisfies, Neutral, Unsatisfied) or member status (Gold, Silver, Bronze). 
+
+3. One-Hot Encoding
+
+One-hot encoding adds new amount of columns same as the number of values in the category.
+
+![One Hot Encoding](/assets/img/KaggleLearn/oneHotEncoding.png)
+
+One-hot encoding does not assume an ordering of the values in the category. (These are called **nominal variables**). One-hot encoding generally does not perform well if the number of values in the category takes on large amount of number. Generally, one-hot encoding won't be used if the number of values in the category exceeds 15 values.
+
 ## Pipelines
 
 ## XGBoost
