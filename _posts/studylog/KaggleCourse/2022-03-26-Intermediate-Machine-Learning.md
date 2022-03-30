@@ -70,6 +70,16 @@ One-hot encoding does not assume an ordering of the values in the category. (The
 
 ## Pipelines
 
+Pipelines module provides cleaner and more organized data preprocessing and modeling coding. It bundles several preprocessing and modeling steps so the developer can process data with easier and intuitive code. 
+
+Pipeline has several benefits, including:
+1. Cleaner code
+2. Fewer bugs
+3. Easier to productionize
+4. More ofption for model validation
+
+[One Hot Encoding](/assets/img/KaggleLearn/oneHotEncoding.png)
+
 ## XGBoost
 
 ## Data Leakage
