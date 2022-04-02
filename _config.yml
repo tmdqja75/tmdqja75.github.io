@@ -58,6 +58,8 @@ menu:
         url:           /playdata/
       - title:         KaggleCourse
         url:           /KaggleCourse/
+  - title:             Projects
+    url:               /projects/
   - title:             Paper
     url:               /paper/
 
