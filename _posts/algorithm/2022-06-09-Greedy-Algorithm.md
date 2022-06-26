@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 주식가격
+title: 탐욕법
 description: >
     탐욕법 (Greedy Method)과 연습 문제
 # image: /assets/img/pythonLogo.png
 sitemap: false
 categories:
-  - algortims
+  - algorithm
 ---
 
 # 탐욕법

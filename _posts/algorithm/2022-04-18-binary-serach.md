@@ -6,7 +6,7 @@ description: >
 # image: /assets/img/pythonLogo.png
 sitemap: false
 categories:
-  - projects
+  - algorithm
 ---
 # 완전 탐색과 이중 탐색 (Exhaustive Search/Binary Search)
 

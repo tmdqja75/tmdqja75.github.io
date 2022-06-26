@@ -6,7 +6,7 @@ description: >
 # image: /assets/img/pythonLogo.png
 sitemap: false
 categories:
-  - projects
+  - algorithm
 ---
 # 스택과 큐 (Stack and Queue)
 
