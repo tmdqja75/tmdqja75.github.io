@@ -80,6 +80,15 @@ Pipeline has several benefits, including:
 
 [One Hot Encoding](/assets/img/KaggleLearn/oneHotEncoding.png)
 
+## Cross Validation
+Cross validation divides original training dataset into eqally distributed k amount of sets (If $k=5$, 20 percent of data will be in each division). Each division is called '**folds**'. In each experiment the first fold is held as validation set, and the model is traind with rest of four folds dataset. The experiment repeats with until we reach to the last fold. This validation process is also known as k-fold validation. 
+
+Given that the model is trained several time, with large dataset, the whole validation process could take a lot of time. It is important to acknowledge these tradeoff. 
+- for small enough dataset, it is ok to run several cross-validation
+- for large datasets, one should consider running only few cross-validation.
+
+
+
 ## XGBoost
 
 ## Data Leakage
