@@ -10,8 +10,12 @@ categories:
 ---
 
 # Midjourney 베타 가입과 사용 방법
-1. 먼저 [여기서](https://discord.com/register?redirect_to=%2Fchannels%2F%40me) Discord 계정을 만듭니다. 
+1. 먼저 [여기서](https://discord.com/register?redirect_to=%2Fchannels%2F%40me) Discord 계정을 만듭니다.
+
+ 
 2. 다음, [Midjourney](https://www.midjourney.com/) 웹페이지에 들어가서 Join the beta버튼을 클릭합니다.
+
+
 3. 다음과 같은 창이 뜨면 "Already have an account?"를 누릅니다.
 
 ![1](../assets/img/1.png)
