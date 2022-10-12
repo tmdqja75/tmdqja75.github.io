@@ -12,4 +12,6 @@ categories:
 {:toc}
 
 ## 예외처리
-### 
+- 예외는
+
+![](../../assets/img/zerobase/exceptionclass.png)
