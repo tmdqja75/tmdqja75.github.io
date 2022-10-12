@@ -14,4 +14,4 @@ categories:
 ## 예외처리
 - 예외는
 
-![](../../assets/img/zerobase/exceptionclass.png)
+![](../assets/img/zerobase/exceptionclass.png)
