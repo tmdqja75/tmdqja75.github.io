@@ -36,7 +36,9 @@ keywords:              [AI, git, gitblog, data science, developer]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
+
+logo:                  https://media.giphy.com/media/3ohhwmT6MWfHwRD6mY/giphy.gif
+# logo:                  https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
 # logo:                  https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif
 
 # This should be the same author as first entry in `_data/authors.yml`.
@@ -95,7 +97,8 @@ remote_theme: hydecorp/hydejack@v9.1.6
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:            /assets/img/brain_neuron_extend.gif   
+accent_image:            https://images.unsplash.com/photo-1583306678433-6eec8fe71e33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80
+# accent_image:            /assets/img/brain_neuron_extend.gif   
 # accent_image:            https://media.giphy.com/media/PjJ1cLHqLEveXysGDB/giphy.gif
 # accent_image:          https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
 # accent_image:          https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif #/assets/img/sidebar-bg.jpg
@@ -351,6 +354,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
+  - jekyll-seo-tag
 
 
 # SEO Tag

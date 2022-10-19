@@ -28,7 +28,6 @@ categories:
 ```python
 n1 = 10
 n2 = 0
-
 try:
     print(n1/n2)
 except:
@@ -41,7 +40,6 @@ except:
 ### `else`
 - `try, except`다음에 오는 구절이며, `try, except`에서 예외가 발생하지 않으면 실행됩니다.
 ```python
-
 try:
     num = int(input("Enter number!: "))
 except:
@@ -79,4 +77,3 @@ class NotUseZeroException(Exception)
 ```
 - 위 코드처럼, 사용자 지정 예외클래스를 만들기 위해서는 파이썬 기본 `Exception`클래스를 상속해야 합니다. 
 - `super().__init__`를 통해 예외가 생겼을 때 출력하는 string을 수정할 수정할 수 있습니다.
-- 
