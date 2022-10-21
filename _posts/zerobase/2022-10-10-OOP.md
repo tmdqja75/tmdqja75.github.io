@@ -6,6 +6,7 @@ description: >
 # image: 
 sitemap: false
 categories:
+  - zerobase
 ---
 
 * 

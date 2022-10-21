@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 파이썬 - 자료구조 1
+title: Python - 자료구조
 description: >
     
-# image: 
+image: https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 sitemap: false
 categories:
+  - zerobase
 ---
 
 * 
@@ -49,7 +50,7 @@ IndexError: list index out of range!
 lst = ['cat', 'dog', 'mouse', 'snake']
 print(f'length of list: {len(lst)}')
 ```
-```bash
+```
 length of list: 4
 ```
 - `len()`함수로 문자열의 길이도 구할 수 있습니다.
@@ -62,7 +63,7 @@ lst = ['cat', 'dog', 'mouse', 'snake']
 for idx, value in enumerate(lst):
     print(f'{idx}: {value}')
 ```
-```bash
+```
 0: cat
 1: dog
 2: mouse
@@ -84,7 +85,7 @@ for idx, value in enumerate(lst):
         lst.remove('dog')
     print(lst)
     ```
-    ```bash
+    ```
     ['cat', 'mouse', 'snake']
     ```
 
@@ -98,7 +99,7 @@ print(result)
 print(lst1)
 print(lst2)
 ```
-```bash
+```
 ['cat', 'dog', 'mouse', 'dog', 'mouse', 'snake']
 ['cat', 'dog', 'mouse']
 ['dog', 'mouse', 'snake']
@@ -111,7 +112,7 @@ lst1.extend(lst2)
 print(lst1)
 print(lst2)
 ```
-```bash
+```
 ['cat', 'dog', 'mouse', 'dog', 'mouse', 'snake']
 ['dog', 'mouse', 'snake']
 ```
@@ -127,7 +128,7 @@ print(f'sorted list: {lst}')
 lst.sort(reverse=True)
 print(f'reversed sorted list: {lst})
 ```
-```bash
+```
 unsorted list: ['cat', 'dog', 'mouse', 'dog', 'mouse', 'snake']
 sorted list: ['cat', 'dog', 'dog', 'mouse', 'mouse', 'snake']
 reversed sorted list: ['snake', 'mouse', 'mouse', 'dog', 'dog', 'cat']
@@ -138,7 +139,7 @@ lst = ['cat', 'dog', 'mouse', 'dog', 'mouse', 'snake']
 lst.reverse()
 print(f'reversed list: {lst}')
 ```
-```bash
+```
 reversed list: ['snake', 'mouse', 'dog', 'mouse', 'dog', 'cat']
 ```
 ### 리스트 슬라이싱
@@ -151,7 +152,18 @@ reversed list: ['snake', 'mouse', 'dog', 'mouse', 'dog', 'cat']
 
 ## 튜플
 - `( )`를 사용하여 선언합니다.
-- 튜플은 한번 생성되면, 리스트처럼 요소 수정, 삭제가 불가능합니다. (Immutable)
+  - 괄호를 생략하고도 선언이 가능합니다.
+```python
+animal_tuple = ('cat', 'dog', 'mice')
+animal_tuple2 = 'cat', 'dog', 'mice'
+print(animal_tuple
+print(animal_tuple2)
+```
+```
+('cat', 'dog', 'mice') 
+('cat', 'dog', 'mice')
+```
+- 튜플은 한번 생성되면, 요소 수정, 삭제가 불가능합니다. (Immutable)
 - 리스트와 비슷한 점이 많습니다.
   - 서로 다른 자료 타입을 저장할 수 있고, 또 다른 컨테이너 자료형을 저장할 수도 있습니다
   - 인덱싱도 리스트와 같이 0에서 시작하고, `tup[n]`로 인덱싱을 합니다.
@@ -165,7 +177,7 @@ animalTuple = ('cat', 'dog', 'mouse', 'snake')
 print('cat' in animalTuple)
 print('fish' in animalTuple)
 ``` 
-```bash
+```
 True
 False
 ```
@@ -175,7 +187,7 @@ sentence = 'the quick fox jumped over the brown box'
 print('fox' in sentence)
 print('over' not in sentence)
 ```
-```bash
+```
 True
 False
 ```
@@ -188,4 +200,130 @@ False
 ### 튜플 슬라이싱
 - 리스트와 같은 방식으로 슬라이싱이 가능합니다. (참조: [리스트 슬라이싱](###리스트-슬라이싱))
 - 슬라이싱한 결과는 튜플 형식으로 반환됩니다.
-- 
+- 리스트와는 다르게 튜플은 슬라이싱을 활용해 아이템을 변경할 수 없습니다 (한 번 선언되면 바꿀 수 없기 떄문).
+```python
+animal_tuple = ('cat', 'dog', 'mice', 'pig', 'wolf')
+animal_tuple[1:3] = ('lamb', 'sheep')
+print(animal_tuple)
+```
+```
+TypeError: 'tuple' object does not support item assignment
+```
+
+### 튜플 정렬
+- 튜플 자체는 수정이 불가하니, 튜플을 리스트로 변환한 후 정렬한 뒤 다시 튜플로 변환하면 정렬할 수 있습니다.
+- `sorted(tuple)`함수는 튜플에 바로 적용할 수 있습니다. 새로 정렬된 데이터는 리스트 형식으로 반환됩니다. (원본 데이터는 유지됨)
+```pythton
+animal_tuple = ('dog', 'cat', 'rat', 'zebra', 'snake')
+sorted_animal_tuple = sorted(animal_tuple)
+print(animal_tuple)
+print(sorted_animal_tuple)
+```
+```
+('dog', 'cat', 'rat', 'zebra', 'snake')
+['cat', 'dog', 'rat', 'snake', 'zebra']
+```
+
+## 딕셔너리
+- 딕셔너리는 키(`key`)와 값(`value`)를 이용해서 자료를 관리합니다.
+
+$$\begin{align}
+&key:\;\;\; k1 \;k2 \; k3 \; ...\\
+&\;\;\;\;\;\;\;\;\;\;\;\downarrow \; \downarrow \;\downarrow\\
+&value: v1 \; v2 \; v3\; ...
+\end{align}
+$$
+
+### **딕셔너리 특징**
+- `key`와 `value`에는 기본적인 숫자, 문자열 데이터 뿐만 아니라 컨테이너 자료형도 삽입할 수 있습니다.
+- 하지만, `key`에는 수정 가능한 자료형 (**mutable**)들은 사용할 수 없습니다.
+
+### 딕셔너리 조회
+- 딕셔너리를 조회하는 방법은 크게 두 가지 방법이 있습니다
+  - 1. 대괄호를 이용한 조회 방법
+    - 대괄호에 원하는 key값을 입력하면, 그에 상응하는 value값을 찾을 수 있습니다.
+    - 대괄호에 딕셔너리에 존재하지 않는 key값을 삽입하면, 에러를 반환합니다.
+    ```python
+    apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+    print(apple_dict['macbook'])
+    ```
+    ```
+    2000000
+    ```
+  - 2. `get()`함수를 이용한 조회
+    - get(key)에 원하는 key값을 입력하면, 그에 상응하는 value값을 찾을 수 있습니다.
+    - 첫번째 방법과의 차이는 get()안에 딕셔너리에 존재하지 않는 key값을 입력하면, 에러를 반환하는 대신, None을 반환합니다.
+    ```python
+    apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+    print(apple_dict.get('iPhone'))
+    print(apple_dict.get('Apple TV'))
+    ```
+    ```
+    1200000
+    None
+    ```
+
+### 딕셔너리 요소 추가/수정
+- 딕셔너리에 key-value값을 추가하고 싶다면, 대괄호를 사용해 다음과 같이 추가할 수 있습니다.
+```python
+apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+apple_dict['Apple TV'] = 210000
+print(apple_dict)
+```
+```
+{'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000, 'Apple TV': 210000}
+```
+- key값에 있는 value값을 수정하고 싶다면, 비슷한 방식으로 수정을 할 수 있습니다.
+```python
+apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+apple_dict['macbook'] = 3100000
+print(apple_dict)
+```
+```
+{'macbook': 3100000, 'iPhone': 1200000, 'Apple Watch': 400000}
+```
+
+### `keys()`와 `values()`, `items()`
+- `key()`, `values()`는 각각 딕셔너리에 전체 key나 value를 조회할 수 있는 함수입니다.
+- `items()`는 딕셔너리에 있는 모든 값들을 key와 value쌍 튜플로 묶어 list형식으로 반환해 줍니다.
+- 각 함수의 값을 꺼내서 쓰고 싶다면, list()함수로 리스트로 변환 수 사용 가능합니다.
+```python
+apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+print(apple_dict.keys())
+print(apple_dict.values())
+print(apple_dict.items())
+print(list(apple_dict.keys()))
+print(list(apple_dict.values()))
+print(list(apple_dict.items()))
+``` 
+```
+dict_keys(['macbook', 'iPhone', 'Apple Watch'])
+dict_values([2000000, 1200000, 400000])
+dict_items([('macbook', 2000000), ('iPhone', 1200000), ('Apple Watch', 400000)])
+['macbook', 'iPhone', 'Apple Watch']
+[2000000, 1200000, 400000]
+[('macbook', 2000000), ('iPhone', 1200000), ('Apple Watch', 400000)]
+```
+
+### 딕셔너리 삭제
+- del키워드를 사용하면, key를 이용해 item을 삭제할 수 있습니다
+```python
+apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+del apple_dict['iPhone']
+print(apple_dict)
+```
+```
+{'macbook': 2000000, 'Apple Watch': 400000}
+```
+- `pop()`함수에 key값을 넣어서 item을 삭제할 수도 있습니다
+- `pop()`을 사용하면 삭제된 key의 value값을 반환합니다.
+```python
+apple_dict = {'macbook': 2000000, 'iPhone': 1200000, 'Apple Watch': 400000}
+return_value =  apple_dict.pop('iPhone')
+print(apple_dict)
+print(return_value)
+```
+```
+{'macbook': 2000000, 'Apple Watch': 400000}
+1200000
+```

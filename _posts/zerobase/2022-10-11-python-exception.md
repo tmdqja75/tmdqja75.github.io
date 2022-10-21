@@ -3,9 +3,10 @@ layout: post
 title: Python 중급 - 예외 처리
 description: >
     
-# image: 
+image: https://images.unsplash.com/photo-1606166245039-ffeba59d83a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1093&q=80
 sitemap: false
 categories:
+  - zerobase
 ---
 
 * 
@@ -16,8 +17,8 @@ categories:
 - 다음 리스트는 파이썬에서 가능한 예외들을 나열한 리스트입니다.
 - **모든 예외 클래스는 파이썬의 기본 Exception클래스를 상속합니다.**
 
-![](../assets/img/zerobase/exceptionclass.png)
-출저:[연오의 파이썬](https://python.bakyeono.net/chapter-9-4.html)
+![](../../assets/img/zerobase/exceptionclass.png)
+출저: [연오의 파이썬](https://python.bakyeono.net/chapter-9-4.html)
 
 ## 예외처리
 - 코드 실행 중 예외가 발생하게 되면, 파이썬은 코드 전체를 중단시킵니다.
@@ -56,7 +57,7 @@ else:
 - 전 코드에서 예외가 발생 유무에 상관 없이 `finally`에 속해있는 코드 블록은 무조건 실행됩니다. 
 
 ### 예외처리 요약
-![tryexcept](../assets/img/zerobase/tryexcept.png){:.centered}
+![tryexcept](../../assets/img/zerobase/tryexcept.png){:.centered}
 
 ### `raise`
 - raise는 코드 중간에 예외를 생성할 때 사용됩니다.
