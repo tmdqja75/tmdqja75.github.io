@@ -4,7 +4,7 @@ title: Stack and Queue
 description: >
     Stack and Queue
 # image: /assets/img/pythonLogo.png
-sitemap: false
+sitemap: true
 categories:
   - algorithm
 ---
