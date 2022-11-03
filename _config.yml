@@ -36,7 +36,7 @@ keywords:              [AI, git, gitblog, data science, developer]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  ../assets/malik-skydsgaard-G21_2MUqkKE-unsplash.jpg
+logo:                  ../assets/owl_logo_main.jpg
 # logo:                  https://media.giphy.com/media/3ohhwmT6MWfHwRD6mY/giphy.gif
 # logo:                  https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
 # logo:                  https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif
@@ -86,8 +86,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9.1.6
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9.1.6
 
 
 # Customizaton
