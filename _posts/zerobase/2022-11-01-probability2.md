@@ -66,7 +66,64 @@ $$
 ### 조건부 확률 (Conditional Probability)
 
 $$
-P(B|A) = \frac{P(A \cap B)}{P(A)},\; P(A)\neq 0
+\begin{equation}
+\begin{cases}
+P(B|A) = \frac{P(A \cap B)}{P(A)},\; P(A)\neq 0 \\
+P(A|B) = \frac{P(A \cap B)}{P(B)},\; P(B)\neq 0
+\end{cases}
+\end{equation}
 $$
 
+![conditional](../../assets/img/zerobase/conditional.jpeg){:.centered width="500"}
 
+#### 확률의 곱셈법칙
+- 위 조건부 확률공식를 재정렬하면 두 집합의 교집합을 구할 수 있는 공식을 구할 수 있습니다.
+
+$$P(A\cap B) = P(A)\cdot P(B|A) = P(B)\cdot P(A|B)$$
+
+- 사건 A, B가 독립일 경우, 
+
+$$P(A\cap B) = P(A)\cdot P(B)$$
+
+### 베이즈 정리 (Bayes' Theorem)
+- 조건부 확률의 확장 개념으로, 
+
+$$P(B_i|A) = \frac{P(B_i\cap A)}{P(A)} = \frac{P(B_i){(A|B_i)}}{\sum_{j=1}^k P(B_j)P(A|B_j)}$$
+
+## 확률변수 (Random Variable)
+- 확률변수는 표본 공간에서 각 사건에 실수를 대응시키는 함수입니다. 예를 들어 주사위를 던졌을 떄 1이 나오는 사건에 1을, 2가 나오는 사건에 2를 붙일 떄 확률변수는 1부터 6이 됩니다.
+- 확률변수의 값들을 하나의 사건에 하나의 값만 붙입니다. 
+- 보통 사건들의 확률 변수를 나타낼 때는 대문자로 표현하고, 확률변수의 특정 값을 소문자로 표현합니다.
+  - 예시: 주사위를 던지는 사건들의 확률변수 $$X={1, 2, 3, 4, 5, 6}$$ | 6을 던지는 사건의 확률변수 $$X=x = 6$$
+- 확률변수에는 두 가지 종류가 있습니다.
+  - 이산 확률 변수 (Discrete Random Variable): 위 주사위 예시와 같이 셀 수 있는 값들로 구성되어 있는 값을이 모여있는 확률변수를 의미합니다.
+  - 연속 확률 변수 (Continuous Random Variable): 실수나 무한대와 같이 연속적이거나 구분되어 있지 않은 값들이 모여있는 확률변수를 의미합니다.
+
+### 확률변수의 평균과 분산
+
+#### 확률변수의 평균(기대값)
+- 확률변수의 평균은 기대값이라고도 부르며, 다음과 같이 계산됩니다.
+
+$$E(X) = \sum_{i=1}^n x_iP(x_i) = x_1P(x_1)+x_2P(x_2)+ ... x_nP(x_n)$$
+
+- $$a$$, $$b$$가 상수일 때 기대값은 다음과 같은 성질을 가지고 있습니다.
+  - $$E(a) = a$$: 상수의 기대값을 상수 그 자체입니다.
+  - $$E(aX) = aE(X)$$ . 
+  - $$E(aX+b) = aE(X) + b$$ . 
+  - $$E(aX\pm bY) = aE(X)\pm bE(Y)$$ . 
+  - $$E(X, Y) = E(X)E(Y)\; \text{if X, Y mutually exclusive} $$ (X, Y가 독립일 때) . 
+
+#### 확률 변수의 분산
+- 확률변수의 분산은 다음과 같이 나타냅니다 
+
+$$Var(X) = \frac{1}{N}\sum(x_i-\mu)^2$$
+
+- $$a$$, $$b$$가 상수일 때 분산은 다음과 같은 성질을 가지고 있습니다.
+  - $$Var(a) = 0$$: 상수의 분산은 0입니다.
+  - $$Var(aX) = a^2E(X)$$ . 
+  - $$Var(X+Y) = Var(X) + Var(Y) + 2Cov(X, Y)$$ . 
+  - $$Var(aX\pm bY) = a^2Var(X)\pm b^2Var(Y) + 2Cov(X, Y)$$ . 
+  - $$Var(XY) = 0\; \text{if X, Y mutually exclusive} $$ (X, Y가 독립일 때) . 
+  - $$Var(X) = E(X^2) = [E(X)]^2$$.
+
+### 공분산
