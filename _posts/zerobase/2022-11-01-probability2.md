@@ -126,4 +126,14 @@ $$Var(X) = \frac{1}{N}\sum(x_i-\mu)^2$$
   - $$Var(XY) = 0\; \text{if X, Y mutually exclusive} $$ (X, Y가 독립일 때) . 
   - $$Var(X) = E(X^2) = [E(X)]^2$$.
 
-### 공분산
+### 공분산(Covariance)
+- 두 확률변수의 선형관계를 나타내는 값입니다.
+- 한 확률변수의 값이 상승할 때...
+  - 다른 확률변수도 상승한다면 양의 공분산을 $$Cov(X, Y) > 0$$ 
+  - 다른 확률변수이 하락한다면 음의 공분산을 $$Cov(X, Y) < 0$$ 가지게 됩니다.
+
+$$Cov(X, Y) = E[(X-E(X)(Y-E(Y))] = \frac{\sum_i^n(X_i-\bar{X})(Y_i-\bar{Y})}{n-1}$$
+
+![cov](https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/05/positive_negative_weak_covariance.jpg)
+출저: [Career Foundry](https://careerfoundry.com/en/blog/data-analytics/covariance-vs-correlation/)
+{:figcaption}

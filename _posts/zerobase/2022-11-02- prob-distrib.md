@@ -61,6 +61,9 @@ $$P(x) = \binom{10}{x}0.5^x(0.5)^{10-x}$$
 - 기대값: $$E[X]=np$$
 - 분산: $$Var[X]=np(1-p)$$
 
+{% include binom.html %}
+
+
 ### 포아송 분포(Poisson Distribution)
 - 포아송 분포는 일정한 시간대에 특정 사건이 발생할 확률 분포입니다.
 
@@ -68,6 +71,8 @@ $$P(X=x) = \frac{e^{-\lambda}\lambda^x}{x!},\; x=0, 1, 2, ...\; X \sim poisson(\
 
 - 기대값: $$E[X]=\lambda$$
 - 분산: $$Var[X]=\lambda$$
+
+{% include poisson.html %}
 
 #### 이항분포와 포아송 근사
 - $$X$$의 확률분포가 이항 분포 $$X \sim B(n,p)$$를 따를 때, n이 충분히 크고, p가 아주 작을 때 (),$$X$$의 분포는 $$\lambda=np$$인 포아송 분포와 근사해집니다.
@@ -185,3 +190,23 @@ $$aX+b \sim N(a\mu + b, a^2\sigma^2)$$
 $$aX + bY \sim N(a\mu_1 + b\mu_2, a^2\sigma_1^2+b^2\sigma_2^2)$$
 
 #### 이항분포의 정규 근사
+- 이항분포 $$(X\sim B(n, p))$$에서 n의 값이 충분히 크면 (실험을 여러 번 할 수록) $$X\sim N(np, np(1-p))$$인 정규분포와 근사해집니다.
+
+{% include binom_normal.html %}
+
+### 지수분포 (Exponential Distribution)
+- 단위 시간당 발생할 확률 $$\lambda$$인 어떤 사건의 횟수가 포아송 분포를 따르면, 사건이 처음 발생할 때까지 걸린 시간 확률 변수 X는 지수분포를 따릅니다.
+- PDF: 
+
+$$f(x) = \lambda e^{-\lambda x},\; x \geq 0, \; X \sim Exp(\lambda)$$
+
+- CDF: 
+
+$$F(x) = 1- e^{-\lambda x},\; x \geq 0$$
+
+- 지수분포의 기대값: $$E[X] = 1/\lambda$$
+- 지수분포의 분산: $$Var[X] = 1/\lambda^2$$
+
+- 포아송 분포를 따르는 연속적인 사건들 사이의 대기 시간들고 지수 분포를 따릅니다.
+
+#### 지수분포의 무기억성
