@@ -43,12 +43,13 @@ categories:
   - 과도적합(Overfit)문제가 발생할 수 있습니다.
 - Under Sampling
   - Under Sampling은 데이터량이 많은 클래스 데이터 추출 수를 데이터량이 적은 클래스의 데이터량 만큼만 샘플링을 하는 방식입니다.
-  - 데이터가 편향될 수 있고, 모형의 성능을 떨어뜨릴 수 있습니다.
+  - 데이터가 편향될 수 있고, 모델의 성능을 떨어뜨릴 수 있습니다.
 
 
 ![Overunder](https://i.stack.imgur.com/FEOjd.jpg){:.centered width="400"}
 출저: [Cross Validated](hhttps://stats.stackexchange.com/questions/351638/random-sampling-methods-for-handling-class-imbalance)
 {:.figcaption}
+
 
 ## 표본분포 (Sampling Distribution)
 - 표본분포는 통계량들이 이루는 분포를 의미합니다.
@@ -58,8 +59,8 @@ categories:
 
 $$\bar{X} = \frac{x_1+x_2 + ...+x_n}{n},\; s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i-\bar{x})^2$$
 
-### 표본 평균 ($$\bar{X}$$)의 기대값과 분산
-- 특정 모집단에서 여러 개의 표본들을 추출하여 각 표본들의 평균을 계산했을 때 그 평균의 기대값을 계산하면 다음과 같이 계산할 수 있습니다.
+### 표본 평균(Sample Mean: $$\bar{X}$$)의 기대값과 분산
+- 특정 모집단에서 여러 개의 표본들을 추출하여 각 표본들의 평균을 계산했을 때 그 평균의 기대값은 다음과 같이 계산할 수 있습니다.
 
 $$E[\bar{X}] = E[\frac{1}{n}(x_1+x_2+...+x_n)] = \frac{1}{n}(E[x_1]+E[x_2]+...E[x_n]) = \frac{1}{n}(\mu+\mu+ ...+\mu) =\mu$$
 
@@ -67,19 +68,30 @@ $$E[\bar{X}] = E[\frac{1}{n}(x_1+x_2+...+x_n)] = \frac{1}{n}(E[x_1]+E[x_2]+...E[
 
 $$Var[\bar{X}] = Var[\frac{1}{n}(x_1+x_2+...+x_n)] = \frac{1}{n^2}(Var[x_1]+Var[x_2]+...Var[x_n]) = \frac{1}{n^2}(\sigma^2+\sigma^2+...+\sigma^2) = \frac{\sigma^2}{n}$$
 
+- 모집단의 분포가 정규 분포 $$N(\mu, \sigma^2)$$일때, 확률 표본 $$X_1, X_2, ..., X_n$$은 iid $$N(\mu, \sigma^2)$$입니다. 여기서, iid는 independent and identically distributed의 약자로, 각 확률 표본들이 독립적이고(independent), 같은 확률 분포를 가진다(identically distributed)는 의미입니다.
 
-### 중심 극한 정리 (Central Limit Theorem)
-- 평균이 $$\mu$$이고 분산이 $$\sigma^2$$인 임의의 모집단에서 크기가 충분히 큰 표본울 추출할 때, 표본 평균 $$\bar{X}$$는 근사적으로 정규분포 $$(\bar{X} \sim N(\mu, \sigma^2/n))$$ 를 따르게 됩니다.
+### **중심 극한 정리 (Central Limit Theorem: CLT)**
+- 평균이 $$\mu$$이고 분산이 $$\sigma^2$$인 임의의 모집단에서 크기가 충분히 큰 표본($$n \geq 30$$)을 추출할 때, 표본 평균 $$\bar{X}$$는 근사적으로 정규분포 $$(\bar{X} \sim N(\mu, \sigma^2/n))$$ 를 따르게 됩니다.
+- 모집단의 확률 분포 모양과 상관없이, 표본들의 평균들은 정규분포를 따르게 됩니다.
+
+![](https://cdn.corporatefinanceinstitute.com/assets/Central-Limit-Theorem-CLT-Diagram.png){:.centered width="500"}
+출저: [CFI](https://corporatefinanceinstitute.com/resources/data-science/central-limit-theorem/)
+{:.figcaption}
+
+## 표본 분포 종류
 
 ### 카이제곱 분포 ($$\chi-$$square Distribution)
 - $$Z \sim \chi^2(\nu)$$.
 - 표준 정규분포의 합
 - 범주형 자료 분석에 활용함
+- 적합도 검증에 활용
 $$f(x:\nu) = \frac{1}{2^{\frac{\nu}{2}}\Gamma(\frac{\nu}{2})}x^{\frac{\nu}{2}-1}e^{-\frac{x}{2}},\; x > 0$$
 
-#### 자유도
+#### 자유도 (Degree of Freedom)
+- 정의상, $$표본수 - 제약조건의 수$$, 또는 $$표본 수 - 추정해야하는 모수의 수$$를 나타냅니다. 
 
 ### t-분포 (t-Distribution)
+- 
 
 ### F-분포 (F-distribution)
 - 분산분석에 활용
