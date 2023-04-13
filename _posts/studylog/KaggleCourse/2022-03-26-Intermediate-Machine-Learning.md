@@ -89,7 +89,3 @@ Given that the model is trained several time, with large dataset, the whole vali
 
 
 
-## XGBoost
-
-## Data Leakage
-
