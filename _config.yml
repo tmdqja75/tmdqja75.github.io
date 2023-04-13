@@ -51,8 +51,6 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             About
-    url:               /about/
   - title:             ZeroBase
     url:               /zerobase/
   - title:             Study Log
