@@ -28,7 +28,7 @@ description:           >
   Welcome to my Blog!
 
 # A shorter description for the sidebar.
-tagline:               Brewing AI
+tagline:               AI 
 
 # A list of keywords for your blog
 keywords:              [AI, git, gitblog, data science, developer]
@@ -59,6 +59,8 @@ menu:
     url:               /projects/
   - title:             Algorithm
     url:               /algorithm/
+  - title:             Archive
+    url:               /archive/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -71,7 +73,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2022. All rights reserved.
+copyright:             © 2024. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -93,7 +95,7 @@ remote_theme: hydecorp/hydejack@v9.1.6
  
 # Sidebar image and theme color of the site.
 accent_image:            https://images.unsplash.com/photo-1583306678433-6eec8fe71e33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80
-# accent_image:            /assets/img/brain_neuron_extend.gif   
+# accent_image:            /assets/img/brain_neuron_extend.gif    
 # accent_image:            https://media.giphy.com/media/PjJ1cLHqLEveXysGDB/giphy.gif
 # accent_image:          https://media.giphy.com/media/3oFzlVJAzNUDwvpcc0/giphy.gif
 # accent_image:          https://media.giphy.com/media/H1S4ztIWxQLoWrRAbr/giphy.gif #/assets/img/sidebar-bg.jpg
@@ -189,7 +191,7 @@ google_analytics:      G-4T29DXTERM
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <username>
+disqus:                tmdqja75
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!

@@ -7,6 +7,7 @@ image: https://images.unsplash.com/photo-1609017909889-d7b582c072f7?ixlib=rb-4.0
 sitemap: false
 categories:
   - zerobase
+comments: true
 ---
 
 * toc
