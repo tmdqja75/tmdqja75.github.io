@@ -51,14 +51,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             ZeroBase
-    url:               /zerobase/
-  - title:             Study Log
-    url:               /studylog/
-  - title:             Projects
-    url:               /projects/
-  - title:             Algorithm
-    url:               /algorithm/
+  - title:             LLM
+    url:               /llm/
+  - title:             Machine Learning
+    url:               /ml/
+  - title:             MLOps
+    url:               /mlops/
   - title:             Archive
     url:               /archive/
 
