@@ -1,0 +1,186 @@
+I"\<hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(https://images.unsplash.com/photo-1583306678433-6eec8fe71e33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80)"></div>
+
+    <div class="sidebar-sticky">
+    <div class="sidebar-about" style="margin-bottom: 10px;">
+
+        <!--블로그프로필 이미지-->
+        
+        <a class="no-hover" style="margin-bottom: 50px;" href="/" tabindex="-1">
+            <img src="../assets/owl_logo_main.jpg" class="avatar" alt="올빼미 블로그 (Owl's Blog)" width="130" height="130" loading="lazy" />
+        </a>
+        
+
+        <!--블로그타이틀-->
+        <div class="sidebartitle" style="margin-bottom: 95px;">
+            <a class="sidebar-title" href="/">
+                <h2 class="h1">올빼미 블로그 (Owl's Blog)</h2>
+            </a>
+        </div>
+        <!--블로그 간단한 설명-->
+        
+        
+        <p class="">
+            AI
+
+        </p>
+
+        
+
+        <!--블로그 조회수-->
+        <div style="text-align: center;">
+            <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftmdqja.github.io&count_bg=%23171C14&title_bg=%23404040&icon=ibeacon.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+        </div>
+
+    </div>
+    
+    <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/llm/"
+          class="sidebar-nav-item "
+          
+        >
+          LLM
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/ml/"
+          class="sidebar-nav-item "
+          
+        >
+          ML&DL
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/mlops/"
+          class="sidebar-nav-item "
+          
+        >
+          MLOps
+        </a>
+      </li>
+    
+  
+</ul>
+
+    </nav>
+
+    
+
+    <!--소셜바-->
+    
+    <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/tmdqja75" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:tmdqja75@gmail.com" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/haseungbeom" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+    </div>
+
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+:ET
