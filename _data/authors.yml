@@ -2,7 +2,7 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <firstname> <lastname>
+  name:              Seungbeom Ha
   email:             <mail@domain.tld>
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -27,7 +27,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     twitter:         <username>
-    github:          <username>
+    github:          tmdqja75
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>

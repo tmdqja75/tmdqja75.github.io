@@ -51,6 +51,10 @@ author:
 menu:
   - title:             ML&DL
     url:               /mldl/
+  - title:             LLM
+    url:               /llm/
+  - title:             MLOps
+    url:               /mlops/
   - title:             Documentation
     url:               /docs/
   - title:             About
