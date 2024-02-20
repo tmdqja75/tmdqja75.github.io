@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS 초보를 위한 Sagemaker Pipeline 사용법 (1)|Pipeline 기본 구조
+title: AWS 초보를 위한 Sagemaker Pipeline 사용법 (1) | Pipeline 기본 구조
 description: >
   Sagemaker Pipeline의 장단점과 사용방법
 image: /assets/post_banner/sagemaker-pipeline.jpeg

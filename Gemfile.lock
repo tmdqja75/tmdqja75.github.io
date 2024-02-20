@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
     duktape (2.7.0.0)
@@ -11,6 +12,13 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.9.1)
+    faraday (2.8.1)
+      base64
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
+    faraday-retry (2.2.0)
+      faraday (~> 2.0)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
     google-protobuf (3.23.4)
@@ -90,6 +98,7 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.6)
     rouge (3.30.0)
+    ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
     sass-embedded (1.58.3)
       google-protobuf (~> 3.21)
@@ -104,6 +113,7 @@ PLATFORMS
 
 DEPENDENCIES
   duktape
+  faraday-retry (~> 2.2)
   jekyll (~> 4.1)
   jekyll-compose
   jekyll-default-layout
