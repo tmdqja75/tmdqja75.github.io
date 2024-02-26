@@ -3,16 +3,12 @@
 # Change `author1` to your shortname.
 author1:
   name:              Seungbeom Ha
-  email:             <mail@domain.tld>
+  email:             tmdqja75@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Data Scientist 
 
   # This photo will be used in the about section
   picture:
@@ -26,7 +22,7 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
+    # twitter:         <username>
     github:          tmdqja75
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
