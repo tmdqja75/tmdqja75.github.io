@@ -4,11 +4,11 @@ title: AWS 초보를 위한 Sagemaker Pipeline 사용법 (1) | Pipeline 기본 �
 description: >
   Sagemaker Pipeline의 장단점과 사용방법
 image: /assets/post_banner/sagemaker-pipeline.jpeg
-categories: mldl
+categories: mlops
 sitemap: false
 ---
 
-{:toc}
+{:.toc}
 
 # Sagemaker Pipeline의 장단점
 
