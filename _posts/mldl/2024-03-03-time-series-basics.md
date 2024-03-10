@@ -3,7 +3,7 @@ layout: post
 title: 시계열 데이터 기초
 description: >
   
-image: /assets/post_banner/sagemaker-pipeline.jpeg
+image: /assets/post_banner/time-series.jpeg
 categories: mldl
 sitemap: false
 ---

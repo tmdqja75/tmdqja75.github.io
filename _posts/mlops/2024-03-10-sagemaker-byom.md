@@ -2,7 +2,7 @@
 layout: post
 title: AWS 초보를 위한 Sagemaker 사용법 (2) | Sagemaker에서 Custom Model 사용하기
 description: >
-  Sagemaker Pipeline의 장단점과 사용방법
+  Sagemaker에서 Custom 모델을 배포하는 방법
 image: /assets/post_banner/aws-sagemaker.png
 categories: mlops
 sitemap: false
@@ -15,13 +15,12 @@ sitemap: false
 ## Sagemaker 🩵 Docker Container
 - Sagemaker 환경에서 커스텀 모델을 배포하는 법을 배우기 전, Sagemaker가 모델을 배포할 때 Docker Container를 어떤 식으로 활용하는지 이해하는게 좋습니다.
 - 아래는 Sageamaker Endpoint가 도커 컨테이너를 활용하는 법을 나타낸 flowchart입니다.
-<\br>
 
-!(sm-endpoint)[/assets/img/blog/sm-endpoint-docker.webp]
+![sm-endpoint](/assets/img/blog/sm-endpoint-docker.jpeg)
 
 1. Sagemaker Endpoint는 ECR에서 모델이 돌아갈 Docker Container를 불러옵니다.
 2. S3에서는 모델과 관련된 파일들을 호출합니다.
-3. API나 사용자가 Endpoint를 호출하면, REST API형식으로 input을 받고, 컨테이터 내에서 처리 후, 결과값을 반환합니다. <\br>
+3. API나 사용자가 Endpoint를 호출하면, REST API형식으로 input을 받고, 컨테이터 내에서 처리 후, 결과값을 반환합니다.
 
 - 이번 블로그 포스팅에서는 모델을 S3에 저장하는법, 컨테이서 생성하는 방법, 그리고 최종적으로 Sagemaker Endpoint를 생성하는 방법들에 대해 포스팅 해보겠습니다.
 - 아래 모든 코드들은 Sagemaker Notebook 환경에서 Jupyter Notebook로 실행하면 보다 편하게 설정할 수 있습니다.
@@ -42,13 +41,12 @@ sitemap: false
 
 ## 1. Sagemaker 모델 서빙 스크립트 작성하기 (`inference.py`)
 
-- 먼저, Sagemaker Endpoint
-- 입력 request를 전처리하고, 추론하고, 추론된 결과를 후처리하는 코드를 포함합니다
-  
-- `model_fn`: 모델이 저장되어 있는 경로를 입력으로 받고, 모델을 재생성하고 모델과 모델 관련 정보를 반환하는 함수입니다.
-- `input_fn`: 입력 데이터를 raw data로 입력받고, 데이터를 모델 입력 형식에 맞춰 반환합니다.
-- `predict_fn`: `input_fn`에서 변환된 데이터와 모델을 입력받고, 최종 결과를 후처리한 후에 결과를 반환합니다.
-- `output_fn`: 후처리된 최종 결과를 받고, json형식으로 변환한 후 최종 output 형식을 반환합니다.
+- 먼저, Sagemaker Endpoint에서 모델과 입출력 데이터를 처리하는 python 코드를 작성해야 합니다.
+- `inference.py`는 입력 request를 전처리하고, 추론하고, 추론된 결과를 후처리하는 코드를 포함합니다.
+    - `model_fn`: 모델이 저장되어 있는 경로를 입력으로 받고, 모델을 재생성하고 모델과 모델 관련 정보를 반환하는 함수입니다.
+    - `input_fn`: 입력 데이터를 raw data로 입력받고, 데이터를 모델 입력 형식에 맞춰 반환합니다.
+    - `predict_fn`: `input_fn`에서 변환된 데이터와 모델을 입력받고, 최종 결과를 후처리한 후에 결과를 반환합니다.
+    - `output_fn`: 후처리된 최종 결과를 받고, json형식으로 변환한 후 최종 output 형식을 반환합니다.
 
 - `inference.py`는 다음과 같은 형식으로 작성될 수 있습니다. 각 함수의 내부 로직은 필요에 따라 추가로 커스텀할 수 있습니다.
 
