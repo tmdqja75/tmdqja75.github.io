@@ -8,7 +8,7 @@ categories: mlops
 sitemap: false
 ---
 
-{:.toc}
+{:toc}
 
 # Sagemaker에서 Custom 모델 배포하기
 
