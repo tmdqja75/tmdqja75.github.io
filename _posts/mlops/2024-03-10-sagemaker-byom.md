@@ -26,7 +26,7 @@ sitemap: false
 - 이번 블로그 포스팅에서는 모델을 S3에 저장하는법, 컨테이서 생성하는 방법, 그리고 최종적으로 Sagemaker Endpoint를 생성하는 방법들에 대해 포스팅 해보겠습니다.
 - 아래 모든 코드들은 Sagemaker Notebook 환경에서 Jupyter Notebook로 실행하면 보다 편하게 설정할 수 있습니다.
 
-## 커스텀 모델을 배포애야 하는 경우 🤷🏻‍♂️
+## 커스텀 모델을 배포해야 하는 경우 🤷🏻‍♂️
 - AWS Sagemaker 환경에서 작업을 하다보면, Sagemaker가 제공하는 환경만으로 모델 배포가 어려운 경우가 있습니다.
 - 예를 들어, 주로 사용하는 Tensorflow, Pytorch, XGBoost와 같은 패키지 외, AWS Sagemaker 환경에서 제공하지 않는 패키지를 모델 훈련,배포 환경에서 활용하는 경우, 커스텀 Docker container를 만들어서 배포해야 하는 경우가 있습니다.
 - Sagemaker에서 커스터마이징한 모델을 배포하는 방법은 다음과 같은 단계들로 진행됩니다.
