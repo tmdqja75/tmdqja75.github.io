@@ -59,7 +59,7 @@ series.plot();
 
 
     
-![png](./2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_4_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_4_0.png)
     
 
 
@@ -82,7 +82,7 @@ rescaled.plot();
 
 
     
-![png](./2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_6_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_6_0.png)
     
 
 
