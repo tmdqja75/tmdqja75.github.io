@@ -96,7 +96,7 @@ back.plot();
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_7_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_7_0.png)
     
 
 
@@ -115,7 +115,7 @@ series_missing.plot();
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_9_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_9_0.png)
     
 
 
@@ -134,7 +134,7 @@ series_missing.plot(label='original');
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_10_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_10_0.png)
     
 
 
@@ -164,7 +164,7 @@ transformed.plot();
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_12_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_12_0.png)
     
 
 
@@ -181,7 +181,7 @@ back.plot();
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_14_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_14_0.png)
     
 
 
@@ -219,7 +219,7 @@ test.plot(label='test');
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_19_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_19_0.png)
     
 
 
@@ -272,16 +272,8 @@ plt.figure(figsize=(16, 3))
 milk_covariates.plot();
 ```
 
-
-
-
-    <Axes: xlabel='Month'>
-
-
-
-
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_21_1.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_21_1.png)
     
 
 
@@ -430,7 +422,7 @@ model.past_covariate_series.plot();
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_27_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_27_0.png)
     
 
 
@@ -449,7 +441,7 @@ model.future_covariate_series.plot()
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_28_1.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_28_1.png)
     
 
 
@@ -499,7 +491,7 @@ pred_less_n.plot(label='n < output_chunk_length', marker='.');
 
 
     
-![png](2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_31_0.png)
+![png](/assets/img/2024-05-12-time-series-darts_files/2024-05-12-time-series-darts_31_0.png)
     
 
 
