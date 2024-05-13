@@ -5,7 +5,8 @@ description: >
   Sagemaker Pipeline의 장단점과 사용방법
 image: /assets/post_banner/aws-sagemaker.png
 categories: mlops
-sitemap: false
+sitemap:
+    changefreq : daily
 ---
 
 {:.toc}

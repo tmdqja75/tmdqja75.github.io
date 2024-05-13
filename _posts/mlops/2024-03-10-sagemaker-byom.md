@@ -5,7 +5,8 @@ description: >
   Sagemaker에서 Custom 모델을 배포하는 방법
 image: /assets/post_banner/aws-sagemaker.png
 categories: mlops
-sitemap: false
+sitemap:
+    changefreq : daily
 ---
 
 1. this list will be replaced by the table of contents
