@@ -6,7 +6,7 @@ description: >
 image: /assets/post_banner/time-series.jpeg
 categories: mldl
 sitemap:
-    changefreq : daily
+    changefreq : weekly
 ---
 
 
