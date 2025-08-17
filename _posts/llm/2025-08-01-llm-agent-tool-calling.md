@@ -5,8 +5,9 @@ image:
   path: https://cdn.prod.website-files.com/614c82ed388d53640613982e/66aa02651c656df9e8e5b5b3_664c8772c80586fb49458bb3_llm-agent-structure.webp
 description: >
   LLM이 도구를 호출 하는 방법
-sitemap: false
 categories: llm
+sitemap:
+    changefreq : weekly
 
 ---
 # LLM 에이전트와 Tool Calling 작동 원리
@@ -110,6 +111,8 @@ LLM에게 도구 종류와 사용법을 알려주는 방법은 SystemPrompt에 �
 
 
 ![llm_memory](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/Agent_ManimCE.gif)
+
+**출저: saf**
 
 ## 정리
 LLM이 도구를 호출하는 방식은 아래 도표로 정리해볼 수 있습니다. 다음 포스팅으로는, LLM이 도구 호출을 위해 어떤 식으로 학습이 되는지, 어떤 데이터셋을 사용하는지에 대해 포스팅해보겠습니다.
