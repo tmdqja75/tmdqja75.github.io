@@ -11,7 +11,7 @@ sitemap:
 
 ---
 
-1. this list will be replaced by the table of contents
+* this list will be replaced by the table of contents
 {:toc}
 
 # LLM 에이전트와 Tool Calling 작동 원리

@@ -9,7 +9,7 @@ sitemap:
     changefreq : weekly
 ---
 
-1. this list will be replaced by the table of contents
+* this list will be replaced by the table of contents
 {:toc}
 
 # Sagemaker에서 Custom 모델 배포하기

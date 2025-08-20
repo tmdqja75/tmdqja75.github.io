@@ -9,7 +9,7 @@ sitemap:
     changefreq : weekly
 ---
 
-1. this list will be replaced by the table of contents
+* this list will be replaced by the table of contents
 {:toc}
 
 # Sagemaker Pipeline의 장단점

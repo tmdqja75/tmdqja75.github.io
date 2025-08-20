@@ -9,7 +9,7 @@ sitemap:
     changefreq : weekly
 ---
 
-1. this list will be replaced by the table of contents
+* this list will be replaced by the table of contents
 {:toc}
 
 # 시계열 데이터
