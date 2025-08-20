@@ -9,8 +9,8 @@ sitemap:
     changefreq : weekly
 ---
 
-
-{:.toc}
+1. this list will be replaced by the table of contents
+{:toc}
 
 # Darts로 손쉽게 시계열 예측하기
 

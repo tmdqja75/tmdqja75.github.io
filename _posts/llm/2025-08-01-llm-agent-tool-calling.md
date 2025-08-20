@@ -10,6 +10,10 @@ sitemap:
     changefreq : weekly
 
 ---
+
+1. this list will be replaced by the table of contents
+{:toc}
+
 # LLM 에이전트와 Tool Calling 작동 원리
 
 최근 자연어 처리 분야에서 가장 주목받는 개념 중 하나는 **LLM 에이전트(Large Language Model Agent)**입니다. 단순히 텍스트만 생성하던 LLM에서 나아가, 외부 도구를 호출하고 실행 결과를 기반으로 추론을 이어가는 능동적 시스템으로 발전하고 있습니다.
