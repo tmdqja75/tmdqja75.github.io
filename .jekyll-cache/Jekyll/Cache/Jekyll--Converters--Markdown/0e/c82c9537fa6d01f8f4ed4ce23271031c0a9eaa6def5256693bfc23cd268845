@@ -52,10 +52,10 @@ You’ll want to move your static assets there.</p>
     <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">collections</span><span class="pi">:</span>
   <span class="na">featured_categories</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span> <span class="s">/category/:name/</span>
-    <span class="na">output</span><span class="pi">:</span>    <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>    <span class="kc">true</span>
   <span class="na">featured_tags</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span> <span class="s">/tag/:name/</span>
-    <span class="na">output</span><span class="pi">:</span>    <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>    <span class="kc">true</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -150,7 +150,7 @@ To enable them for all posts, add to the config file</p>
   <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">posts</span>
     <span class="na">values</span><span class="pi">:</span>
-      <span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">comments</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <h3 id="restoring-the-about-page">Restoring the about page</h3>

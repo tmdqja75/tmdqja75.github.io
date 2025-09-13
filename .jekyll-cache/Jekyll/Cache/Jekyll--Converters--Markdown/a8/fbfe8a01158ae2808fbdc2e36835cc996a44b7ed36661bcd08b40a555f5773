@@ -29,7 +29,7 @@
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">---</span>
 <span class="o">---</span>
-<span class="nx">importScripts</span><span class="p">(</span><span class="dl">"</span><span class="s2">{{ '/assets/js/sw.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}</span><span class="dl">"</span><span class="p">);</span>
+<span class="nf">importScripts</span><span class="p">(</span><span class="dl">"</span><span class="s2">{{ '/assets/js/sw.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>This will load the main service worker script from Hydejack’s assets. The <code class="language-plaintext highlighter-rouge">site.time</code> part is necessary to make the service worker “byte different” every time you create a new build of your site, which triggers an update.</p>
@@ -37,7 +37,7 @@
 <p>In your <code class="language-plaintext highlighter-rouge">config.yml</code> under the <code class="language-plaintext highlighter-rouge">hydejack</code> key, add the following:</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">offline</span><span class="pi">:</span>
-  <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span>
   <span class="na">cache_version</span><span class="pi">:</span> <span class="m">1</span>
 </code></pre></div></div>
 
@@ -173,7 +173,7 @@ Also, since all files are valid SCSS, the splitting part is entirely optional.
 If you would like to build just one regular CSS file, add</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_inline_css</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">no_inline_css</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <p>to your config file.</p>

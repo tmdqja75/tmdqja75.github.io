@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LLM에이전트가 도구를 방법
+title: LLM에이전트가 도구를 호출하는 방법
 image: 
   path: https://cdn.prod.website-files.com/614c82ed388d53640613982e/66aa02651c656df9e8e5b5b3_664c8772c80586fb49458bb3_llm-agent-structure.webp
 description: >

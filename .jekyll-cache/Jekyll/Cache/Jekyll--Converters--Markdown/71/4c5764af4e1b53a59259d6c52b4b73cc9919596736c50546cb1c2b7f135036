@@ -343,7 +343,7 @@ see the included <a href="https://github.com/hydecorp/hydejack-starter-kit/blob/
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">layout</span><span class="pi">:</span>   <span class="s">post</span>
 <span class="na">title</span><span class="pi">:</span>    <span class="s">Hello World</span>
-<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="kc">true</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -355,7 +355,7 @@ E.g. to enable comments on all posts, add to your config file:</p>
   <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">posts</span>
     <span class="na">values</span><span class="pi">:</span>
-      <span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">comments</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <h2 id="enabling-google-analytics">Enabling Google Analytics</h2>
@@ -515,7 +515,7 @@ In the zip, ignore the <code class="language-plaintext highlighter-rouge">manife
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
 <span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">cookies_banner</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">cookies_banner</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <p>Enabling this setting will show a notice at the top of the page to new visitors.
@@ -550,11 +550,11 @@ provide your <a href="https://tinyletter.com/">Tinyletter</a> username to the <c
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
 <span class="na">hydejack</span><span class="pi">:</span>
   <span class="na">dark_mode</span><span class="pi">:</span>
-    <span class="na">dynamic</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">dynamic</span><span class="pi">:</span> <span class="kc">true</span>
     <span class="na">sunrise</span><span class="pi">:</span> <span class="m">6</span>
     <span class="na">sunset</span><span class="pi">:</span>  <span class="m">18</span>
-    <span class="na">icon</span><span class="pi">:</span>    <span class="no">true</span>
-    <span class="na">always</span><span class="pi">:</span>  <span class="no">false</span>
+    <span class="na">icon</span><span class="pi">:</span>    <span class="kc">true</span>
+    <span class="na">always</span><span class="pi">:</span>  <span class="kc">false</span>
 </code></pre></div></div>
 
 <p>Setting <code class="language-plaintext highlighter-rouge">dynamic</code>, will enable dark mode based on the client’s local time (unlike location-based sunset calculations, this approach does not require a permission form the user). You can adjust <code class="language-plaintext highlighter-rouge">sunrise</code> and <code class="language-plaintext highlighter-rouge">sunset</code> to change when to show the light/dark theme.</p>

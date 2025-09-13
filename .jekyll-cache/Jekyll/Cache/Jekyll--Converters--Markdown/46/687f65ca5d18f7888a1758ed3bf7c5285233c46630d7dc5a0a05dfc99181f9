@@ -101,10 +101,10 @@ convert your-image.jpg -resize 12.5% -sampling-factor 4:2:0 -strip -quality 85 -
 <span class="na">collections</span><span class="pi">:</span>
   <span class="na">featured_categories</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span>         <span class="s">/:name/</span>
-    <span class="na">output</span><span class="pi">:</span>            <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>            <span class="kc">true</span>
   <span class="na">featured_tags</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span>         <span class="s">/tag-:name/</span>
-    <span class="na">output</span><span class="pi">:</span>            <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>            <span class="kc">true</span>
 </code></pre></div></div>
 
 <h3 id="recap-categories-and-tags-in-jekyll">Recap: Categories and tags in Jekyll</h3>
@@ -240,7 +240,7 @@ Some content
 <span class="nn">---</span>
 <span class="na">layout</span><span class="pi">:</span> <span class="s">welcome</span>
 <span class="na">title</span><span class="pi">:</span>  <span class="s">Welcome</span>
-<span class="na">cover</span><span class="pi">:</span>  <span class="no">true</span> <span class="c1">#!! Add this</span>
+<span class="na">cover</span><span class="pi">:</span>  <span class="kc">true</span> <span class="c1">#!! Add this</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -288,7 +288,7 @@ Technically, it is a modified version of the <code class="language-plaintext hig
 <span class="nn">---</span>
 <span class="na">layout</span><span class="pi">:</span> <span class="s">welcome</span>
 <span class="na">title</span><span class="pi">:</span>  <span class="s">Welcome</span>
-<span class="na">cover</span><span class="pi">:</span>  <span class="no">true</span>
+<span class="na">cover</span><span class="pi">:</span>  <span class="kc">true</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -311,7 +311,7 @@ Technically, it is a modified version of the <code class="language-plaintext hig
   <span class="pi">-</span> <span class="s">_posts/2017-05-03-javascripten.md</span>
   <span class="pi">-</span> <span class="s">/blog/2012-02-07-example-content/</span>
 <span class="na">posts_page</span><span class="pi">:</span> <span class="s">/blog/</span>
-<span class="na">featured</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">featured</span><span class="pi">:</span> <span class="kc">false</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -349,7 +349,7 @@ i.e. it will apply to the entire page.</dd>
 <span class="na">collections</span><span class="pi">:</span>
   <span class="na">projects</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span> <span class="s">/projects/:path/</span>
-    <span class="na">output</span><span class="pi">:</span>    <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>    <span class="kc">true</span>
 </code></pre></div></div>
 
 <p>Next, add a <code class="language-plaintext highlighter-rouge">projects.md</code> to in the root (you can adjust the name/location to match the <code class="language-plaintext highlighter-rouge">permalink</code> of the
@@ -362,7 +362,7 @@ with the name of the collection as a value, e.g.:</p>
 <span class="na">layout</span><span class="pi">:</span>          <span class="s">projects</span>
 <span class="na">title</span><span class="pi">:</span>           <span class="s">Projects*</span>
 <span class="na">show_collection</span><span class="pi">:</span> <span class="s">projects</span>
-<span class="na">featured</span><span class="pi">:</span>        <span class="no">true</span>
+<span class="na">featured</span><span class="pi">:</span>        <span class="kc">true</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -408,7 +408,7 @@ A project’s front matter should look like:</p>
     <span class="na">url</span><span class="pi">:</span>     <span class="s">http://hyde.getpoole.com</span>
   <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span>   <span class="s">Source</span>
     <span class="na">url</span><span class="pi">:</span>     <span class="s">https://github.com/poole/hyde</span>
-<span class="na">featured</span><span class="pi">:</span>    <span class="no">false</span>
+<span class="na">featured</span><span class="pi">:</span>    <span class="kc">false</span>
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -441,13 +441,13 @@ A project’s front matter should look like:</p>
   <span class="c1"># The default projects collection</span>
   <span class="na">projects</span><span class="pi">:</span>
     <span class="na">permalink</span><span class="pi">:</span>         <span class="s">/projects/:path/</span>
-    <span class="na">output</span><span class="pi">:</span>            <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>            <span class="kc">true</span>
 
   <span class="c1"># Our new projects collection</span>
   <span class="na">other_projects</span><span class="pi">:</span>
     <span class="c1"># Make sure the permalink path is different!</span>
     <span class="na">permalink</span><span class="pi">:</span>         <span class="s">/other-projects/:path/</span>
-    <span class="na">output</span><span class="pi">:</span>            <span class="no">true</span>
+    <span class="na">output</span><span class="pi">:</span>            <span class="kc">true</span>
 </code></pre></div></div>
 
 <p>Create a new folder in the top level directory that follows the naming convention <code class="language-plaintext highlighter-rouge">_&lt;collection name&gt;</code>. In our case the name is <code class="language-plaintext highlighter-rouge">_other_projects</code>.
@@ -487,7 +487,7 @@ In it, create collection items as <a href="#adding-a-project">shown above</a>.</
 <span class="na">title</span><span class="pi">:</span>  <span class="s">Resume</span>
 <span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
   <span class="s">A short description of the page for search engines (~150 characters long).</span>
-<span class="na">hide_description</span><span class="pi">:</span> <span class="no">true</span> 
+<span class="na">hide_description</span><span class="pi">:</span> <span class="kc">true</span> 
 <span class="nn">---</span>
 </code></pre></div></div>
 
@@ -561,8 +561,8 @@ In it, create collection items as <a href="#adding-a-project">shown above</a>.</
 <p>If a keyword is not recognized, the provided text will be spelled out  instead. To disable icons and always spell out the text,  set <code class="language-plaintext highlighter-rouge">no_skill_icons</code> and/or <code class="language-plaintext highlighter-rouge">no_langauge_icons</code> to <code class="language-plaintext highlighter-rouge">true</code>.</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `resume.md`</span>
-<span class="na">no_language_icons</span><span class="pi">:</span> <span class="no">true</span>
-<span class="na">no_skill_icons</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">no_language_icons</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="na">no_skill_icons</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <h3 id="adding-a-specialized-resume-or-multiple-resumes">Adding a specialized resume or multiple resumes</h3>
@@ -590,7 +590,7 @@ Add the following to the front matter to add all 4 buttons:</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: "resume.md"</span>
 <span class="na">buttons</span><span class="pi">:</span>
-  <span class="na">print</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">print</span><span class="pi">:</span> <span class="kc">true</span>
   <span class="na">pdf</span><span class="pi">:</span> <span class="s">/assets/Resume.pdf</span>
   <span class="na">vcf</span><span class="pi">:</span> <span class="s">http://h2vx.com/vcf/&lt;!--url--&gt;</span>
   <span class="na">json</span><span class="pi">:</span> <span class="s">/assets/resume.json</span>

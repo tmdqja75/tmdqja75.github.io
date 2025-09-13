@@ -28,7 +28,7 @@ by setting <code class="language-plaintext highlighter-rouge">use_lsi: true</cod
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
 <span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">use_lsi</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">use_lsi</span><span class="pi">:</span> <span class="kc">true</span>
 </code></pre></div></div>
 
 <p>Then, you have to run <code class="language-plaintext highlighter-rouge">jekyll build</code> with the <code class="language-plaintext highlighter-rouge">--lsi</code> flag:</p>
