@@ -199,7 +199,7 @@ hydejack:
   no_mark_external:    false
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
+  no_push_state:       fasle
 
   # Set to `true` if you want to disable the drawer
   no_drawer:           false
@@ -292,7 +292,7 @@ hydejack:
 # Set which comment system to use
 comments:
   # 'disqus' / 'giscus' / 'utterances' are available
-  provider:            giscus
+  provider: giscus
 
 # You must install utterances github app before use.(https://github.com/apps/utterances)
 # Make sure all variables are set properly. Check below link for detail.

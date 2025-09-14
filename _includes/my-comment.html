@@ -1,4 +1,4 @@
-{% assign provider = site.comments.provider | default:"disqus" %}
+{% assign provider = site.comments.provider | default:"giscus" %}
 {% if provider == "disqus" %}
   {% assign disqus = site.disqus | default:site.disqus_shortname %}
   {% if disqus %}
