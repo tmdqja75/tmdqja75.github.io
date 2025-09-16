@@ -7,6 +7,7 @@ image: /assets/post_banner/aws-sagemaker.png
 categories: mlops
 sitemap:
     changefreq : weekly
+comments: true
 ---
 
 * this list will be replaced by the table of contents
