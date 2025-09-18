@@ -54,8 +54,6 @@ menu:
     url:               /llm/
   - title:             MLOps
     url:               /mlops/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
 
