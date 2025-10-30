@@ -70,8 +70,9 @@ DSPy는 guess-work 프롬프팅 기법에서 벗어나 데이터 기반으로 �
 1. 예상 질문 (또는 input)을 5-10개 정도 작성하거나 과거 실험 로그 기록에서 예상 질문을 추출한다.
 2. ChatGPT로 원하는 만큼 추가 질문 데이터 생성 (40~60개 정도)
 3. 각 질문마다 라벨 적용
-4. 생성된 데이터셋과 DSPy의 `MiPROv2` 알고리즘으로 프롬프트 최적화 진행
-5. MLFlow로 분류 정확도 트래킹
+4. 프롬프트 최적화 train dataset과 test dataset 분류
+5. 생성된 데이터셋과 DSPy의 `MiPROv2` 알고리즘으로 프롬프트 최적화 진행
+6. MLFlow로 분류 정확도 트래킹
 
 ![dspy_mlflow tracking](</assets/img/2025-10-25-llm-agent-considerations/Screenshot 2025-10-14 at 12.04.57.png>)
 
